@@ -16,7 +16,7 @@ def exibir_clientes():
 
 def buscar_cliente(email):
       c = 0
-      for i in range(len(clientes)):
+      for i in range(len(clientes)-1):
             if email in clientes[i][1]:
                   for x in clientes[i]:
                         print(x)
@@ -27,7 +27,7 @@ def buscar_cliente(email):
 
 def remover_cliente(email):
       c = 0
-      for i in range(len(clientes)):
+      for i in range(len(clientes)-1):
             if email in clientes[i][1]:
                   print(f'{clientes[i][0]} foi removido(a) com sucesso.')
                   clientes.remove(clientes[i])
