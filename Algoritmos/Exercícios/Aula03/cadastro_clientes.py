@@ -16,7 +16,7 @@ def exibir_clientes():
 
 def buscar_cliente(email):
       c = 0
-      for i in range(len(clientes)-1):
+      for i in range(len(clientes)):
             if email == clientes[i][1]:
                   for x in clientes[i]:
                         print(x)
@@ -34,10 +34,8 @@ def remover_cliente(email):
                   c+=1
       
       if c == 0:
-            print('Cliente não encontrado')
-                
-
-
+            print('Cliente não encontrado') 
+                  
 while True:
       print('-'*25)
       print('VERSÃO TESTE DE FUNCIONALIDADES DE SISTEMA')
@@ -71,45 +69,33 @@ while True:
             if len(clientes) == 0:
                   print('Nenhum cliente cadastrado ainda.\n')
                   
-                  continuar = input('Deseja continuar com o teste? [S/N] ')
-                  if continuar in 'Ss':
-                        continue
-                  else:
-                        break
             else:
                   exibir_clientes()
                   
-                  continuar = input('Deseja continuar com o teste? [S/N] ')
-                  if continuar in 'Ss':
-                        continue
-                  else:
-                        break
+            continuar = input('Deseja continuar com o teste? [S/N] ')
+            if continuar in 'Ss':
+                  continue
+            else:
+                  break
                   
       
       elif opcao == 3:
             if len(clientes) == 0:
                   print('Nenhum cliente cadastrado ainda.\n')
                   
-                  continuar = input('Deseja continuar com o teste? [S/N] ')
-                  if continuar in 'Ss':
-                        continue
-                  else:
-                        break
                   
             else:
-                  emails = ['pedro@gmail.com','douglas@gmail.com','gioliano@gmail.com','erica@gmail.com']
-                  email = random.choice(emails)
+                  email = random.choice(['pedro@gmail.com','douglas@gmail.com','gioliano@gmail.com','erica@gmail.com'])
                   buscar_cliente(email)
                   
-                  continuar = input('Deseja continuar com o teste? [S/N] ')
-                  if continuar in 'Ss':
-                        continue
-                  else:
-                        break
-      
+            continuar = input('Deseja continuar com o teste? [S/N] ')
+            if continuar in 'Ss':
+                  continue
+            else:
+                  break
+
       elif opcao == 4:
-            emails = ['pedro@gmail.com','douglas@gmail.com','gioliano@gmail.com','erica@gmail.com']
-            email = random.choice(emails)
+            email = random.choice(['pedro@gmail.com','douglas@gmail.com','gioliano@gmail.com','erica@gmail.com'])
             remover_cliente(email)
             
             continuar = input('Deseja continuar com o teste? com o teste? [S/N] ')
