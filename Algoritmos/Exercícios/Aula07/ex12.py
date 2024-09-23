@@ -9,9 +9,9 @@ dicio = {
 }
 
 def produto_caro (dicionario):
-    mais_caro = max(dicio.values())
+    mais_caro = max(dicionario.values())
     
-    for chave, valor in dicio.items():
+    for chave, valor in dicionario.items():
         if valor == mais_caro:
             return f'{chave}: {valor}'
 
