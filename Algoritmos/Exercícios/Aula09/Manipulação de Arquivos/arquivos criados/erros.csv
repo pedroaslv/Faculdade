@@ -1,0 +1,4 @@
+Linha 3 inválida. Idade e Email incorretos. {'Nome': 'Bob', 'Idade': 'trinta', 'Email': 'bobexample.com'}
+Linha 5 inválida. Idade incorreta. {'Nome': 'David', 'Idade': '40.5', 'Email': 'david@example.com'}
+Linha 7 inválida. Email incorreto. {'Nome': 'Frank', 'Idade': '35', 'Email': 'frankdomain.com'}
+Linha 11 inválida. Email incorreto. {'Nome': 'Jack', 'Idade': '27', 'Email': 'jackexample.com'}

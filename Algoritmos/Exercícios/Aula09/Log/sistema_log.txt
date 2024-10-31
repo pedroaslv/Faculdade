@@ -1,0 +1,2 @@
+31/10/2024 00:53:09 - Evento: Login de Usuário
+31/10/2024 00:53:23 - Evento: Logout do usuário.
